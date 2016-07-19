@@ -29,3 +29,38 @@ alert(course);
 alert(window.course);
 
 //名字空间
+//减少命名冲突，使用唯一全局变量
+var myapp = {};
+
+//变量
+myapp.name = 'myapp';
+myapp.version = 1.0;
+
+//函数
+myapp.foo = function(){
+	return 'foo';
+};
+
+//局部作用域
+function foo3(){
+	for (var i = 0;i<100;i++){
+
+	}
+	i +=100;//仍然可以引用变量i;
+}
+//let 申明块级作用域的变量
+function foo4(){
+	var sum = 0;
+	for (let i=0;i<100;i++){
+		sum +=i;
+	}
+	i += 1; //syntaxError
+}
+
+//常量
+//ES6标准 ：const
+const PI = 3.14;
+PI = 3;//不报错但是无效果；
+PI;//3.14
+
+
