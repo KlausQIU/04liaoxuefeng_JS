@@ -31,10 +31,10 @@ xiaoming.age(); //26
 
  //call 与apply类似，apply打包成array传入，call把参数按顺序传入
 
-Math.max.apply(null,[3,5,6]);
-Math.max.call(null,3,5,6);
+Math.max.apply(null,[3,5,6]); //6
+Math.max.call(null,3,5,6);  //6
 
-//装饰器
+//装饰器 计算ParseInt使用的次数
 var count = 0;
 var oldParseInt = parseInt;
 

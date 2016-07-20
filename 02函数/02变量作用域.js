@@ -21,7 +21,7 @@ function foo2(){
 	alert(x);
 	var y = 'bob';
 }
-foo(); //undefined
+foo2(); //undefined
 
 //全局作用域
 var course = 'learn JavaScript';
