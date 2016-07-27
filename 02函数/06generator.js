@@ -10,3 +10,4 @@ function* next_id(){
 	}
 	return i;
 }
+

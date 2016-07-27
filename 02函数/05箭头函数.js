@@ -38,3 +38,4 @@ var obj = {
 };
 
 obj.getAge();//25
+

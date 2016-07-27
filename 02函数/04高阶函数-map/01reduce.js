@@ -55,3 +55,4 @@ r = arr.map(function(val){
 return parseInt(val,10);
 });
 alert('[' + r[0] + ', ' + r[1] + ', ' + r[2] + ']');
+
