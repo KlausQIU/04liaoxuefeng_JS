@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	//创建对象；
+		var arr = [1,2,3];
+		//原型链：arr --> Array.prototype --> object.prototype --> null (return  undefined)
+		function foo(){
+			return ();
+		}
+  	//构造函数  按约定首字母大写
+  	//先创建函数
+  	function Student(name){
+  		this.name = name;
+  		this.hello = function(){
+  			alert('hello,'+this.name + '!');
+  		}
+  	}
+  	var xiaoming = new Student('xiaoming');
+  	//constructor 属性
+  	xiaoming.constructor === Student.prototype.constructor; //true
+  	//homework
+  	function Cat(name){
+  		this.name = name;
+  	}
+  	Cat.prototype.say = function(){
+  		return 'Hello, '+this.name+'!'
+  	}
+  	
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
