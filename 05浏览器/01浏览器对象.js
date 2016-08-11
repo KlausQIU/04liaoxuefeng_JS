@@ -34,3 +34,5 @@ location.reload;//重新加载当前页面
 //document
 document.title = 'xxxx';//更改页面title
 document.cookie = 'httpOnly';
+
+
